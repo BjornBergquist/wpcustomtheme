@@ -1,0 +1,55 @@
+/* 
+Theme Name: customtheme
+Author: Bjorn
+Description: Bjorns coola tema
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: customtheme
+*/
+
+body{
+    background-color: rgb(167, 82, 123);
+    color: rgb(27, 27, 27);
+    padding: 0;
+    margin: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.main-menu{
+    background-color: rgb(27, 27, 27);
+    color: rgb(167, 82, 123);
+    padding: 0.5em;
+}
+
+.main-menu ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    gap: 2em;
+}
+
+.main-menu a{
+    color: white;
+}
+
+
+.pageTitle{
+    margin-left: 2em;
+    position: relative;
+}
+
+.pageTitle::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0.5rem;
+    left: -1em;
+    background-color: rgb(27, 27, 27);
+}
